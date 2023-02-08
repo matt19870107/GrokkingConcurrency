@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="706ac1fb-f34e-47d0-b9b2-e4d11ba190da" name="Changes" comment="initial version">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework2/NoVisibility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +48,20 @@
       <recent name="com.matt.homework1" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SafeSequenceTest.testSafeSequenceWithMultipleThreads">
+  <component name="RunManager" selected="Application.NoVisibility">
+    <configuration name="NoVisibility" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.matt.homework2.NoVisibility" />
+      <module name="GrokkingConcurrency.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.matt.homework2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SafeSequenceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -142,6 +156,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NoVisibility" />
         <item itemvalue="Gradle.SafeSequenceTest.testSafeSequenceWithMultipleThreads" />
         <item itemvalue="Gradle.SafeSequenceTest" />
         <item itemvalue="Gradle.UnSafeSequenceTest.testUnSafeSequenceWithMultipleThreads" />
@@ -182,5 +197,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial version" />
     <option name="LAST_COMMIT_MESSAGE" value="initial version" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/GrokkingConcurrency$NoVisibility.ic" NAME="NoVisibility Coverage Results" MODIFIED="1675864472259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.matt.homework2.*</FILTER>
+    </SUITE>
   </component>
 </project>
