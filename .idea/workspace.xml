@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="706ac1fb-f34e-47d0-b9b2-e4d11ba190da" name="Changes" comment="initial version">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework2/ReorderExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework2/SafeStates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework2/UnsafeStates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/matt/homework2/TestSafeStates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/matt/homework2/TestUnsafeStates.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,10 +49,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.matt.homework2" />
       <recent name="com.matt.homework1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NoVisibility">
+  <component name="RunManager" selected="Gradle.TestSafeStates.testStatesCannotBeChanged">
     <configuration name="NoVisibility" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.matt.homework2.NoVisibility" />
       <module name="GrokkingConcurrency.main" />
@@ -75,7 +80,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SafeSequenceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestSafeStates.testStatesCannotBeChanged" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -88,7 +93,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.matt.homework1.SafeSequenceTest&quot;" />
+            <option value="&quot;com.matt.homework2.TestSafeStates.testStatesCannotBeChanged&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -98,7 +103,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="SafeSequenceTest.testSafeSequenceWithMultipleThreads" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestUnsafeStates.testFinalStatesCanBeChanged" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -111,7 +116,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.matt.homework1.SafeSequenceTest.testSafeSequenceWithMultipleThreads&quot;" />
+            <option value="&quot;com.matt.homework2.TestUnsafeStates.testFinalStatesCanBeChanged&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -121,7 +126,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="UnSafeSequenceTest.testUnSafeSequenceWithMultipleThreads" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestUnsafeStates.testStatesCanBeChanged" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -134,7 +139,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.matt.homework1.UnSafeSequenceTest.testUnSafeSequenceWithMultipleThreads&quot;" />
+            <option value="&quot;com.matt.homework2.TestUnsafeStates.testStatesCanBeChanged&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -146,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TestSafeStates.testStatesCannotBeChanged" />
+        <item itemvalue="Gradle.TestUnsafeStates.testFinalStatesCanBeChanged" />
+        <item itemvalue="Gradle.TestUnsafeStates.testStatesCanBeChanged" />
         <item itemvalue="Application.ReorderExample" />
         <item itemvalue="Application.NoVisibility" />
-        <item itemvalue="Gradle.SafeSequenceTest.testSafeSequenceWithMultipleThreads" />
-        <item itemvalue="Gradle.SafeSequenceTest" />
-        <item itemvalue="Gradle.UnSafeSequenceTest.testUnSafeSequenceWithMultipleThreads" />
       </list>
     </recent_temporary>
   </component>
