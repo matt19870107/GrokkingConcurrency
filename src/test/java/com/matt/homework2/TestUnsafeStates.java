@@ -20,17 +20,13 @@ public class TestUnsafeStates {
         UnsafeStates unsafeStates = new UnsafeStates();
 
         String[] states = unsafeStates.getStates();
-        assertNotNull(states);
         String[] orginalStates = Arrays.copyOf(states,states.length);
 
         CountDownLatch latch = new CountDownLatch(1);
         ExecutorService executorService = Executors.newSingleThreadExecutor();
         executorService.submit(()->{
             String[] currentStates = unsafeStates.getStates();
-            if(currentStates.length > 0)
-                currentStates[currentStates.length-1] = "AC";
-            else
-                currentStates[0] = "AC";
+            currentStates[currentStates.length-1] = "AC";
             latch.countDown();
         });
         latch.await();
@@ -43,17 +39,13 @@ public class TestUnsafeStates {
         UnsafeStates unsafeStates = new UnsafeStates();
 
         String[] finalStates = unsafeStates.getFinalStates();
-        assertNotNull(finalStates);
         String[] orginalStates = Arrays.copyOf(finalStates,finalStates.length);
 
         CountDownLatch latch = new CountDownLatch(1);
         ExecutorService executorService = Executors.newSingleThreadExecutor();
         executorService.submit(()->{
             String[] currentStates = unsafeStates.getFinalStates();
-            if(currentStates.length > 0)
-                currentStates[currentStates.length-1] = "AC";
-            else
-                currentStates[0] = "AC";
+            currentStates[currentStates.length-1] = "AC";
             latch.countDown();
         });
         latch.await();

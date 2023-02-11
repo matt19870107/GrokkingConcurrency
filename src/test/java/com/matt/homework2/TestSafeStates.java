@@ -19,17 +19,13 @@ public class TestSafeStates {
         SafeStates safeStates = new SafeStates();
 
         String[] states = safeStates.getStates();
-        assertNotNull(states);
         String[] orginalStates = Arrays.copyOf(states,states.length);
 
         CountDownLatch latch = new CountDownLatch(1);
         ExecutorService executorService = Executors.newSingleThreadExecutor();
         executorService.submit(()->{
             String[] currentStates = safeStates.getStates();
-            if(currentStates.length > 0)
-                currentStates[currentStates.length-1] = "AC";
-            else
-                currentStates[0] = "AC";
+            currentStates[currentStates.length-1] = "AC";
             latch.countDown();
         });
         latch.await();
