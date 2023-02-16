@@ -10,22 +10,22 @@ import java.util.concurrent.CompletableFuture;
 import java.util.stream.IntStream;
 
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.*;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.not;
 
-public class TestHashMap {
-
+public class ImprovedMapTest {
     @Test
     void testPutIsNotThreadSafe(){
-        Map<String, Integer> map = new HashMap<>();
-        CompletableFuture<Void> future1 = CompletableFuture.runAsync(() -> randomPut100Values(map));
-        CompletableFuture<Void> future2 = CompletableFuture.runAsync(() -> randomPut100Values(map));
+        ImprovedMap<String, Integer> improvedMap = new ImprovedMap<>(new HashMap<>());
+        CompletableFuture<Void> future1 = CompletableFuture.runAsync(() -> randomPut50000Values(improvedMap));
+        CompletableFuture<Void> future2 = CompletableFuture.runAsync(() -> randomPut50000Values(improvedMap));
         List<CompletableFuture<Void>> futures = List.of(future1, future2);
         CompletableFuture.allOf(futures.toArray(new CompletableFuture[futures.size()])).join();
 
-        assertThat(map.size(), not(equalTo(100000)));
+        assertThat(improvedMap.size(), equalTo(100000));
     }
 
-    private void randomPut100Values(Map<String, Integer> map){
+    private void randomPut50000Values(ImprovedMap<String, Integer> map){
         IntStream.range(0,50000).forEach(number -> map.put(UUID.randomUUID().toString(), number));
     }
 }
