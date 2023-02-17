@@ -2,14 +2,14 @@ package com.matt.homework3;
 
 import net.jcip.annotations.ThreadSafe;
 
-import java.util.Map;
+import java.util.HashMap;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 @ThreadSafe
 public class ImprovedMap<K, V>{
     private final ConcurrentMap<K, V> wrappedMap;
 
-    public ImprovedMap(Map<K, V> map){
+    public ImprovedMap(HashMap<K, V> map){
         this.wrappedMap = new ConcurrentHashMap<>(map);
     }
 
