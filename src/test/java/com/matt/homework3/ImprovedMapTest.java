@@ -15,8 +15,8 @@ import static org.hamcrest.Matchers.not;
 
 public class ImprovedMapTest {
     @Test
-    void testPutIsNotThreadSafe(){
-        ImprovedMap<String, Integer> improvedMap = new ImprovedMap<>(new HashMap<>());
+    void testPutIsThreadSafe(){
+        ImprovedMap<String, Integer> improvedMap = new ImprovedMap<>();
         CompletableFuture<Void> future1 = CompletableFuture.runAsync(() -> randomPut50000Values(improvedMap));
         CompletableFuture<Void> future2 = CompletableFuture.runAsync(() -> randomPut50000Values(improvedMap));
         List<CompletableFuture<Void>> futures = List.of(future1, future2);

@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="706ac1fb-f34e-47d0-b9b2-e4d11ba190da" name="Changes" comment="initial version">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework3/ImprovedMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/matt/homework3/ImprovedMapTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/matt/homework4/MapPerformanceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/matt/homework3/TestHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/matt/homework3/HashMapTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/matt/homework3/ImprovedMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework3/ImprovedMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/matt/homework3/ImprovedMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/matt/homework3/ImprovedMapTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +98,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "C:/Users/Matt/Downloads/idea-jcstress-plugin-1.0.1.jar",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+    "settings.editor.selected.configurable": "project.propCompiler"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -107,27 +107,19 @@
       <recent name="com.matt.homework2" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.HashMapTest.testPutIsNotThreadSafe">
-    <configuration name="GrokkingConcurrency [jcstress]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="jcstress" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+  <component name="RunManager" selected="Application.MapPerformanceTest">
+    <configuration name="MapPerformanceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.matt.homework4.MapPerformanceTest" />
+      <module name="GrokkingConcurrency.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.matt.homework4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="HashMapTest.testPutIsNotThreadSafe" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -152,7 +144,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ImprovedMapTest.testPutIsNotThreadSafe" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ImprovedMapTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -165,7 +157,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.matt.homework3.ImprovedMapTest.testPutIsNotThreadSafe&quot;" />
+            <option value="&quot;com.matt.homework3.ImprovedMapTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -175,7 +167,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestHashMap" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MapPerformanceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -188,7 +180,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.matt.homework3.TestHashMap&quot;" />
+            <option value="&quot;com.matt.homework4.MapPerformanceTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -198,7 +190,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestHashMap.testPutIsNotThreadSafe" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MapPerformanceTest.testPutIsNotThreadSafe" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -211,7 +203,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.matt.homework3.TestHashMap.testPutIsNotThreadSafe&quot;" />
+            <option value="&quot;com.matt.homework4.MapPerformanceTest.testPutIsNotThreadSafe&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -222,19 +214,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.MapPerformanceTest" />
+      <item itemvalue="Gradle.ImprovedMapTest" />
+      <item itemvalue="Gradle.MapPerformanceTest" />
+      <item itemvalue="Gradle.MapPerformanceTest.testPutIsNotThreadSafe" />
       <item itemvalue="Gradle.HashMapTest.testPutIsNotThreadSafe" />
-      <item itemvalue="Gradle.ImprovedMapTest.testPutIsNotThreadSafe" />
-      <item itemvalue="Gradle.TestHashMap" />
-      <item itemvalue="Gradle.TestHashMap.testPutIsNotThreadSafe" />
-      <item itemvalue="Gradle.GrokkingConcurrency [jcstress]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MapPerformanceTest" />
+        <item itemvalue="Application.MapPerformanceTest" />
+        <item itemvalue="Gradle.MapPerformanceTest.testPutIsNotThreadSafe" />
+        <item itemvalue="Gradle.ImprovedMapTest" />
         <item itemvalue="Gradle.HashMapTest.testPutIsNotThreadSafe" />
-        <item itemvalue="Gradle.ImprovedMapTest.testPutIsNotThreadSafe" />
-        <item itemvalue="Gradle.TestHashMap.testPutIsNotThreadSafe" />
-        <item itemvalue="Gradle.TestHashMap" />
-        <item itemvalue="Gradle.GrokkingConcurrency [jcstress]" />
       </list>
     </recent_temporary>
   </component>
