@@ -21,7 +21,7 @@ public class MapPerformanceTest {
     }
 
 
-    @Fork(value = 1, warmups = 1)
+    @Fork(value = 2, warmups = 2)
     @Benchmark
     @OutputTimeUnit(TimeUnit.NANOSECONDS)
     @BenchmarkMode(Mode.AverageTime)
@@ -30,7 +30,7 @@ public class MapPerformanceTest {
         randomPut5000ValuesByThreads(improvedMap);
     }
 
-    @Fork(value = 1, warmups = 1)
+    @Fork(value = 2, warmups = 2)
     @Benchmark
     @OutputTimeUnit(TimeUnit.NANOSECONDS)
     @BenchmarkMode(Mode.AverageTime)
@@ -39,7 +39,7 @@ public class MapPerformanceTest {
         randomPut5000ValuesByThreads(synchronizedMap);
     }
 
-    @Fork(value = 1, warmups = 1)
+    @Fork(value = 2, warmups = 2)
     @Benchmark
     @OutputTimeUnit(TimeUnit.NANOSECONDS)
     @BenchmarkMode(Mode.AverageTime)
