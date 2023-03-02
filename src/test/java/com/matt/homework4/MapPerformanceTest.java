@@ -49,18 +49,22 @@ public class MapPerformanceTest {
     }
 
     private void randomPut5000ValuesByThreads(ImprovedMap<String, Integer> map){
-        Runnable runnable = () -> IntStream.range(0,1000).forEach(number -> map.put(UUID.randomUUID().toString(), number));
+        Runnable runnable = () -> IntStream.range(0,5000).forEach(number -> map.put(UUID.randomUUID().toString(), number));
         CompletableFuture<Void> future1 = CompletableFuture.runAsync(runnable);
         CompletableFuture<Void> future2 = CompletableFuture.runAsync(runnable);
-        List<CompletableFuture<Void>> futures = List.of(future1, future2);
+        CompletableFuture<Void> future3 = CompletableFuture.runAsync(runnable);
+        CompletableFuture<Void> future4 = CompletableFuture.runAsync(runnable);
+        List<CompletableFuture<Void>> futures = List.of(future1, future2,future3,future4);
         CompletableFuture.allOf(futures.toArray(new CompletableFuture[futures.size()])).join();
     }
 
     private void randomPut5000ValuesByThreads(Map<String, Integer> map){
-        Runnable runnable = () -> IntStream.range(0,1000).forEach(number -> map.put(UUID.randomUUID().toString(), number));
+        Runnable runnable = () -> IntStream.range(0,5000).forEach(number -> map.put(UUID.randomUUID().toString(), number));
         CompletableFuture<Void> future1 = CompletableFuture.runAsync(runnable);
         CompletableFuture<Void> future2 = CompletableFuture.runAsync(runnable);
-        List<CompletableFuture<Void>> futures = List.of(future1, future2);
+        CompletableFuture<Void> future3 = CompletableFuture.runAsync(runnable);
+        CompletableFuture<Void> future4 = CompletableFuture.runAsync(runnable);
+        List<CompletableFuture<Void>> futures = List.of(future1, future2,future3,future4);
         CompletableFuture.allOf(futures.toArray(new CompletableFuture[futures.size()])).join();
     }
 
