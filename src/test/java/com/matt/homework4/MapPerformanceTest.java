@@ -9,6 +9,7 @@ import java.util.*;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.TimeUnit;
+import java.util.function.Consumer;
 import java.util.stream.IntStream;
 
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -27,7 +28,8 @@ public class MapPerformanceTest {
     @BenchmarkMode(Mode.AverageTime)
     public void testImprovedMapPerformance(){
         ImprovedMap<String, Integer> improvedMap = new ImprovedMap<>();
-        randomPut5000ValuesByThreads(improvedMap);
+        Consumer<Integer> consumer = number -> improvedMap.put(UUID.randomUUID().toString(), number);
+        randomPut5000ValuesByThreads(consumer);
     }
 
     @Fork(value = 2, warmups = 2)
@@ -36,7 +38,8 @@ public class MapPerformanceTest {
     @BenchmarkMode(Mode.AverageTime)
     public void testSynchronizedMapPerformance(){
         Map<String, Integer> synchronizedMap = Collections.synchronizedMap(new HashMap<>());
-        randomPut5000ValuesByThreads(synchronizedMap);
+        Consumer<Integer> consumer = number -> synchronizedMap.put(UUID.randomUUID().toString(), number);
+        randomPut5000ValuesByThreads(consumer);
     }
 
     @Fork(value = 2, warmups = 2)
@@ -45,21 +48,12 @@ public class MapPerformanceTest {
     @BenchmarkMode(Mode.AverageTime)
     public void testConcurrentMapPerformance(){
         Map<String, Integer> concurrentHashMap = new ConcurrentHashMap<>();
-        randomPut5000ValuesByThreads(concurrentHashMap);
+        Consumer<Integer> consumer = number -> concurrentHashMap.put(UUID.randomUUID().toString(), number);
+        randomPut5000ValuesByThreads(consumer);
     }
 
-    private void randomPut5000ValuesByThreads(ImprovedMap<String, Integer> map){
-        Runnable runnable = () -> IntStream.range(0,5000).forEach(number -> map.put(UUID.randomUUID().toString(), number));
-        CompletableFuture<Void> future1 = CompletableFuture.runAsync(runnable);
-        CompletableFuture<Void> future2 = CompletableFuture.runAsync(runnable);
-        CompletableFuture<Void> future3 = CompletableFuture.runAsync(runnable);
-        CompletableFuture<Void> future4 = CompletableFuture.runAsync(runnable);
-        List<CompletableFuture<Void>> futures = List.of(future1, future2,future3,future4);
-        CompletableFuture.allOf(futures.toArray(new CompletableFuture[futures.size()])).join();
-    }
-
-    private void randomPut5000ValuesByThreads(Map<String, Integer> map){
-        Runnable runnable = () -> IntStream.range(0,5000).forEach(number -> map.put(UUID.randomUUID().toString(), number));
+    private void randomPut5000ValuesByThreads( Consumer<Integer> consumer){
+        Runnable runnable = () -> IntStream.range(0,5000).forEach(number -> consumer.accept(number));
         CompletableFuture<Void> future1 = CompletableFuture.runAsync(runnable);
         CompletableFuture<Void> future2 = CompletableFuture.runAsync(runnable);
         CompletableFuture<Void> future3 = CompletableFuture.runAsync(runnable);
