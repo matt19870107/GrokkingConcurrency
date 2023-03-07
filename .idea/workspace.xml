@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="706ac1fb-f34e-47d0-b9b2-e4d11ba190da" name="Changes" comment="initial version" />
+    <list default="true" id="706ac1fb-f34e-47d0-b9b2-e4d11ba190da" name="Changes" comment="initial version">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework5/BarrierHarness.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework5/Harness.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/matt/homework5/TestHarness.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/matt/homework4/MapPerformanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/matt/homework4/MapPerformanceTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,11 +103,12 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.matt.homework5" />
       <recent name="com.matt.homework1" />
       <recent name="com.matt.homework2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MapPerformanceTest">
+  <component name="RunManager" selected="Gradle.TestHarness">
     <configuration name="MapPerformanceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.matt.homework4.MapPerformanceTest" />
       <module name="GrokkingConcurrency.test" />
@@ -114,52 +121,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="HashMapTest.testPutIsNotThreadSafe" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.matt.homework3.HashMapTest.testPutIsNotThreadSafe&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="ImprovedMapTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.matt.homework3.ImprovedMapTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
     </configuration>
     <configuration name="MapPerformanceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -184,7 +145,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MapPerformanceTest.testPutIsNotThreadSafe" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestHarness" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -197,7 +158,53 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.matt.homework4.MapPerformanceTest.testPutIsNotThreadSafe&quot;" />
+            <option value="&quot;com.matt.homework5.TestHarness&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestHarness.testConcurrentMapPerformanceByBarrierHarness" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.matt.homework5.TestHarness.testConcurrentMapPerformanceByBarrierHarness&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestHarness.testConcurrentMapPerformanceByHarness" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.matt.homework5.TestHarness.testConcurrentMapPerformanceByHarness&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -209,18 +216,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.MapPerformanceTest" />
-      <item itemvalue="Gradle.ImprovedMapTest" />
+      <item itemvalue="Gradle.TestHarness" />
+      <item itemvalue="Gradle.TestHarness.testConcurrentMapPerformanceByBarrierHarness" />
+      <item itemvalue="Gradle.TestHarness.testConcurrentMapPerformanceByHarness" />
       <item itemvalue="Gradle.MapPerformanceTest" />
-      <item itemvalue="Gradle.MapPerformanceTest.testPutIsNotThreadSafe" />
-      <item itemvalue="Gradle.HashMapTest.testPutIsNotThreadSafe" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TestHarness" />
+        <item itemvalue="Gradle.TestHarness.testConcurrentMapPerformanceByHarness" />
+        <item itemvalue="Gradle.TestHarness.testConcurrentMapPerformanceByBarrierHarness" />
         <item itemvalue="Gradle.MapPerformanceTest" />
         <item itemvalue="Application.MapPerformanceTest" />
-        <item itemvalue="Gradle.MapPerformanceTest.testPutIsNotThreadSafe" />
-        <item itemvalue="Gradle.ImprovedMapTest" />
-        <item itemvalue="Gradle.HashMapTest.testPutIsNotThreadSafe" />
       </list>
     </recent_temporary>
   </component>

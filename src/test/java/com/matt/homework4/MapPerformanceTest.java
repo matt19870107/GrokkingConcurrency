@@ -54,11 +54,11 @@ public class MapPerformanceTest {
 
     private void randomPut5000ValuesByThreads( Consumer<Integer> consumer){
         Runnable runnable = () -> IntStream.range(0,5000).forEach(number -> consumer.accept(number));
-        CompletableFuture<Void> future1 = CompletableFuture.runAsync(runnable);
-        CompletableFuture<Void> future2 = CompletableFuture.runAsync(runnable);
-        CompletableFuture<Void> future3 = CompletableFuture.runAsync(runnable);
-        CompletableFuture<Void> future4 = CompletableFuture.runAsync(runnable);
-        List<CompletableFuture<Void>> futures = List.of(future1, future2,future3,future4);
+        List<CompletableFuture<Void>> futures = new ArrayList<>();
+        for(int i = 0; i< 25; i++){
+            CompletableFuture<Void> future = CompletableFuture.runAsync(runnable);
+            futures.add(future);
+        }
         CompletableFuture.allOf(futures.toArray(new CompletableFuture[futures.size()])).join();
     }
 
