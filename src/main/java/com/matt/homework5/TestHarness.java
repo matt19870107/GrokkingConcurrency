@@ -2,7 +2,7 @@ package com.matt.homework5;
 
 import java.util.concurrent.CountDownLatch;
 
-public class Harness {
+public class TestHarness {
     public long timeTasks(int nThreads, final Runnable task) throws  InterruptedException{
         final CountDownLatch startGate = new CountDownLatch(1);
         final CountDownLatch endGate = new CountDownLatch(nThreads);
@@ -28,4 +28,6 @@ public class Harness {
         long end = System.nanoTime();
         return end - start;
     }
+
+
 }
