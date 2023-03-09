@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="706ac1fb-f34e-47d0-b9b2-e4d11ba190da" name="Changes" comment="initial version">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/matt/homework5/ImprovedTestHarnessMapCases.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/matt/homework5/TestHarnessMapCases.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/matt/homework5/BarrierHarness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework5/ImprovedTestHarness.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/matt/homework5/Harness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework5/TestHarness.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/matt/homework5/TestHarness.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/matt/homework5/ImprovedTestHarness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework5/ImprovedTestHarness.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

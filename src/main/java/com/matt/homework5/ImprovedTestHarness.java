@@ -8,11 +8,11 @@ import java.util.concurrent.Executors;
 public class ImprovedTestHarness {
     public long timeTasks(int nThreads, final Runnable task) throws BrokenBarrierException, InterruptedException {
 
-        ExecutorService pool = null;
+        ExecutorService pool = Executors.newFixedThreadPool(nThreads);
+
         try{
             CyclicBarrier startBarrier = new CyclicBarrier(nThreads + 1);
             CyclicBarrier endBarrier = new CyclicBarrier(nThreads + 1);
-            pool = Executors.newFixedThreadPool(nThreads);
 
             for(int i = 0; i< nThreads; i++){
                 Runnable runnable = () -> {
@@ -23,9 +23,7 @@ public class ImprovedTestHarness {
                         } finally {
                             endBarrier.await();
                         }
-                    }catch (BrokenBarrierException e) {
-                        throw new RuntimeException(e);
-                    }catch (InterruptedException e) {
+                    }catch (InterruptedException | BrokenBarrierException e) {
                         Thread.currentThread().interrupt();
                     }
                 };
