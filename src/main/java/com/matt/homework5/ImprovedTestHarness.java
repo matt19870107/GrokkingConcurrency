@@ -56,8 +56,9 @@ public class ImprovedTestHarness {
                     try{
                         startBarrier.await();
                         Future<?> future = null;
+                        ExecutorService singlePool = Executors.newSingleThreadExecutor();
                         try{
-                            future = Executors.newSingleThreadExecutor().submit(task);
+                            future = singlePool.submit(task);
                             future.get(timeoutInSeconds,TimeUnit.SECONDS);
                         } catch (ExecutionException e) {
                             // Will be cancelled too.
@@ -68,7 +69,7 @@ public class ImprovedTestHarness {
                         } finally {
                             endBarrier.await();
                             future.cancel(true);
-
+                            singlePool.shutdown();
                         }
                     }catch (InterruptedException | BrokenBarrierException e) {
                         Thread.currentThread().interrupt();
