@@ -1,8 +1,9 @@
-package com.matt.homework5;
+package com.matt.homework7;
 
 
 import java.util.concurrent.*;
 import java.util.logging.Logger;
+
 
 public class ImprovedTestHarness {
 
@@ -10,7 +11,7 @@ public class ImprovedTestHarness {
 
     public long timeTasks(int nThreads, final Runnable task) throws BrokenBarrierException, InterruptedException {
 
-        ExecutorService pool = Executors.newFixedThreadPool(nThreads);
+        ExecutorService pool = new TimingThreadPool(nThreads, false);
 
         try{
             CyclicBarrier startBarrier = new CyclicBarrier(nThreads + 1);
@@ -43,9 +44,9 @@ public class ImprovedTestHarness {
 
     }
 
-    public long timeTasks(int nThreads, int timeoutInSeconds, final Runnable task) throws BrokenBarrierException, InterruptedException {
+    public long timeTasks(int nThreads, int timeoutInSeconds, final Runnable task, boolean shouldStartAllCoreThreads) throws BrokenBarrierException, InterruptedException {
 
-        ExecutorService pool = Executors.newFixedThreadPool(nThreads);
+        ExecutorService pool = new TimingThreadPool(nThreads, shouldStartAllCoreThreads);
 
         try{
             CyclicBarrier startBarrier = new CyclicBarrier(nThreads + 1);
@@ -65,7 +66,7 @@ public class ImprovedTestHarness {
                             logger.fine("Cancelled due to exception");
                         } catch (TimeoutException e) {
                             //Will be cancelled finally
-                            logger.fine("Cancelled due to exception");
+                            logger.fine("Cancelled due to timeout");
                         } finally {
                             endBarrier.await();
                             future.cancel(true);
