@@ -86,6 +86,7 @@ public class ImprovedTestHarness {
             return end - start;
         }finally {
             pool.shutdown();
+            pool.awaitTermination(Long.MAX_VALUE, TimeUnit.SECONDS);
         }
 
     }

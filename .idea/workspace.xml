@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="706ac1fb-f34e-47d0-b9b2-e4d11ba190da" name="Changes" comment="initial version">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework7/ImprovedTestHarness.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework7/ThreadDeadlock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework7/TimingThreadPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/matt/homework7/TimingThreadPoolTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/matt/homework5/ImprovedTestHarness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework5/ImprovedTestHarness.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/matt/homework7/ImprovedTestHarness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework7/ImprovedTestHarness.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/matt/homework7/TimingThreadPoolTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/matt/homework7/TimingThreadPoolTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +96,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "C:/Users/Matt/Downloads/idea-jcstress-plugin-1.0.1.jar",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "File.Encoding"
   }
 }]]></component>

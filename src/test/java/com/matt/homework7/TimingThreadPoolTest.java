@@ -22,8 +22,7 @@ public class TimingThreadPoolTest {
         };
         improvedTestHarness.timeTasks(100, 1, runnableLastOneSeconds, false);
 
-
-        Thread.sleep(5000);
+        //Thread.sleep(5000);
     }
 
 
@@ -44,7 +43,7 @@ public class TimingThreadPoolTest {
         };
         improvedTestHarness.timeTasks(100, 1, runnableLastOneSeconds, true);
 
-        Thread.sleep(5000);
+        //Thread.sleep(5000);
     }
 
 }
