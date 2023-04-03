@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="706ac1fb-f34e-47d0-b9b2-e4d11ba190da" name="Changes" comment="initial version">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework8/OrderingDeadlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework8/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework8/dump.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework8/img1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework8/img2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/matt/homework7/ImprovedTestHarness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework7/ImprovedTestHarness.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/matt/homework7/TimingThreadPoolTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/matt/homework7/TimingThreadPoolTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,14 +99,17 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Matt/Downloads/idea-jcstress-plugin-1.0.1.jar",
+    "last_opened_file_path": "E:/IdeaProjects/Test/GrokkingConcurrency/src/main/java/com/matt/homework8",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "File.Encoding"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IdeaProjects\Test\GrokkingConcurrency\src\main\java\com\matt\homework8" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.matt.homework7" />
       <recent name="com.matt.homework6" />
@@ -111,7 +118,20 @@
       <recent name="com.matt.homework2" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TimingThreadPoolTest">
+  <component name="RunManager" selected="Application.OrderingDeadlock">
+    <configuration name="OrderingDeadlock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.matt.homework8.OrderingDeadlock" />
+      <module name="GrokkingConcurrency.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.matt.homework8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ThreadDeadlock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.matt.homework7.ThreadDeadlock" />
       <module name="GrokkingConcurrency.main" />
@@ -124,29 +144,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="ImprovedTestHarnessTimeoutCases.testTimeoutThreadsCanBeCancelled1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.matt.homework6.ImprovedTestHarnessTimeoutCases.testTimeoutThreadsCanBeCancelled1&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
     </configuration>
     <configuration name="TimingThreadPoolTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -218,19 +215,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.OrderingDeadlock" />
       <item itemvalue="Application.ThreadDeadlock" />
       <item itemvalue="Gradle.TimingThreadPoolTest" />
       <item itemvalue="Gradle.TimingThreadPoolTest.testStartCorePoolPreThreadTaskComing" />
       <item itemvalue="Gradle.TimingThreadPoolTest.testStartCorePoolThreadWhenNewTaskComing" />
-      <item itemvalue="Gradle.ImprovedTestHarnessTimeoutCases.testTimeoutThreadsCanBeCancelled1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.OrderingDeadlock" />
+        <item itemvalue="Gradle.TimingThreadPoolTest.testStartCorePoolThreadWhenNewTaskComing" />
         <item itemvalue="Gradle.TimingThreadPoolTest" />
         <item itemvalue="Gradle.TimingThreadPoolTest.testStartCorePoolPreThreadTaskComing" />
-        <item itemvalue="Gradle.TimingThreadPoolTest.testStartCorePoolThreadWhenNewTaskComing" />
         <item itemvalue="Application.ThreadDeadlock" />
-        <item itemvalue="Gradle.ImprovedTestHarnessTimeoutCases.testTimeoutThreadsCanBeCancelled1" />
       </list>
     </recent_temporary>
   </component>
@@ -281,11 +278,25 @@
           <line>52</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/matt/homework7/TimingThreadPool.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/matt/homework7/TimingThreadPool.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-defaults>
         <breakpoint suspend="THREAD" type="java-line" />
       </breakpoints-defaults>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GrokkingConcurrency$NoVisibility.ic" NAME="NoVisibility Coverage Results" MODIFIED="1675864472259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
