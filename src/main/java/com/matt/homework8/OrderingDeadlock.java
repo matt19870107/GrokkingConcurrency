@@ -61,6 +61,6 @@ public class OrderingDeadlock {
         orderingDeadlock.lockAll();
     }
 
-    public static class LockObject{
+    private static class LockObject{
     }
 }

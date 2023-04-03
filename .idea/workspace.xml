@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="706ac1fb-f34e-47d0-b9b2-e4d11ba190da" name="Changes" comment="initial version">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework8/OrderingDeadlock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework8/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework8/dump.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework8/img1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework8/img2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/matt/homework8/OrderingDeadlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework8/OrderingDeadlock.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
