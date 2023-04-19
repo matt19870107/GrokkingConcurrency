@@ -6,10 +6,6 @@ import java.util.concurrent.BrokenBarrierException;
 
 public class TimingThreadPoolTest {
 
-    /*
-     * 3月 27, 2023 9:58:31 下午 com.matt.homework7.TimingThreadPool terminated
-     * 信息: Terminated: avg time=935912968ns
-    * */
     @Test
     void testStartCorePoolThreadWhenNewTaskComing()throws InterruptedException, BrokenBarrierException {
         ImprovedTestHarness improvedTestHarness = new ImprovedTestHarness();
@@ -27,10 +23,6 @@ public class TimingThreadPoolTest {
 
 
 
-    /*
-     *  3月 27, 2023 9:58:49 下午 com.matt.homework7.TimingThreadPool terminated
-     *  信息: Terminated: avg time=935223780ns
-     * */
     @Test
     void testStartCorePoolPreThreadTaskComing()throws InterruptedException, BrokenBarrierException {
         ImprovedTestHarness improvedTestHarness = new ImprovedTestHarness();

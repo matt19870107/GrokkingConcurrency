@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="706ac1fb-f34e-47d0-b9b2-e4d11ba190da" name="Changes" comment="initial version">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/matt/homework8/OrderingDeadlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework8/OrderingDeadlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework9/Grocery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework9/ImprovedGrocery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework9/SynchronizedGrocery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/matt/homework9/GroceryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/matt/homework9/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/matt/homework9/img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/matt/homework7/TimingThreadPoolTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/matt/homework7/TimingThreadPoolTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +70,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -93,7 +102,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "E:/IdeaProjects/Test/GrokkingConcurrency/src/main/java/com/matt/homework8",
+    "last_opened_file_path": "E:/IdeaProjects/Test/GrokkingConcurrency",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
@@ -105,14 +114,27 @@
       <recent name="E:\IdeaProjects\Test\GrokkingConcurrency\src\main\java\com\matt\homework8" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.matt.homework9" />
       <recent name="com.matt.homework7" />
       <recent name="com.matt.homework6" />
       <recent name="com.matt.homework5" />
       <recent name="com.matt.homework1" />
-      <recent name="com.matt.homework2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.OrderingDeadlock">
+  <component name="RunManager" selected="Application.GroceryTest">
+    <configuration name="GroceryTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.matt.homework9.GroceryTest" />
+      <module name="GrokkingConcurrency.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.matt.homework9.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OrderingDeadlock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.matt.homework8.OrderingDeadlock" />
       <module name="GrokkingConcurrency.main" />
@@ -126,20 +148,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadDeadlock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.matt.homework7.ThreadDeadlock" />
-      <module name="GrokkingConcurrency.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.matt.homework7.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TimingThreadPoolTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GroceryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -152,7 +161,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.matt.homework7.TimingThreadPoolTest&quot;" />
+            <option value="&quot;com.matt.homework9.GroceryTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -162,7 +171,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TimingThreadPoolTest.testStartCorePoolPreThreadTaskComing" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GroceryTest.addToSynchronizedGrocery" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -175,7 +184,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.matt.homework7.TimingThreadPoolTest.testStartCorePoolPreThreadTaskComing&quot;" />
+            <option value="&quot;com.matt.homework9.GroceryTest.addToSynchronizedGrocery&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -185,7 +194,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TimingThreadPoolTest.testStartCorePoolThreadWhenNewTaskComing" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GroceryTest.test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -198,7 +207,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.matt.homework7.TimingThreadPoolTest.testStartCorePoolThreadWhenNewTaskComing&quot;" />
+            <option value="&quot;com.matt.homework9.GroceryTest.test&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -209,19 +218,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.GroceryTest" />
       <item itemvalue="Application.OrderingDeadlock" />
-      <item itemvalue="Application.ThreadDeadlock" />
-      <item itemvalue="Gradle.TimingThreadPoolTest" />
-      <item itemvalue="Gradle.TimingThreadPoolTest.testStartCorePoolPreThreadTaskComing" />
-      <item itemvalue="Gradle.TimingThreadPoolTest.testStartCorePoolThreadWhenNewTaskComing" />
+      <item itemvalue="Gradle.GroceryTest" />
+      <item itemvalue="Gradle.GroceryTest.addToSynchronizedGrocery" />
+      <item itemvalue="Gradle.GroceryTest.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GroceryTest" />
+        <item itemvalue="Gradle.GroceryTest.addToSynchronizedGrocery" />
+        <item itemvalue="Gradle.GroceryTest" />
+        <item itemvalue="Gradle.GroceryTest.test" />
         <item itemvalue="Application.OrderingDeadlock" />
-        <item itemvalue="Gradle.TimingThreadPoolTest.testStartCorePoolThreadWhenNewTaskComing" />
-        <item itemvalue="Gradle.TimingThreadPoolTest" />
-        <item itemvalue="Gradle.TimingThreadPoolTest.testStartCorePoolPreThreadTaskComing" />
-        <item itemvalue="Application.ThreadDeadlock" />
       </list>
     </recent_temporary>
   </component>
