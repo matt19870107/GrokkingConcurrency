@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="706ac1fb-f34e-47d0-b9b2-e4d11ba190da" name="Changes" comment="initial version">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework9/Grocery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework9/ImprovedGrocery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework9/SynchronizedGrocery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/matt/homework9/GroceryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/matt/homework9/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/matt/homework9/img.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework11/FairLockGrocery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/matt/homework11/NonfairLockGrocery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/matt/homework11/GroceryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/matt/homework11/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/matt/homework7/TimingThreadPoolTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/matt/homework7/TimingThreadPoolTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/matt/homework9/GroceryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/matt/homework9/GroceryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +99,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "E:/IdeaProjects/Test/GrokkingConcurrency",
+    "last_opened_file_path": "E:/IdeaProjects/Test/GrokkingConcurrency/src/test/java/com/matt/homework11",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
@@ -111,17 +108,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IdeaProjects\Test\GrokkingConcurrency\src\test\java\com\matt\homework11" />
       <recent name="E:\IdeaProjects\Test\GrokkingConcurrency\src\main\java\com\matt\homework8" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.matt.homework11" />
       <recent name="com.matt.homework9" />
       <recent name="com.matt.homework7" />
       <recent name="com.matt.homework6" />
       <recent name="com.matt.homework5" />
-      <recent name="com.matt.homework1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GroceryTest">
+  <component name="RunManager" selected="Application.com.matt.homework11.GroceryTest">
     <configuration name="GroceryTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.matt.homework9.GroceryTest" />
       <module name="GrokkingConcurrency.test" />
@@ -135,12 +133,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderingDeadlock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.matt.homework8.OrderingDeadlock" />
-      <module name="GrokkingConcurrency.main" />
+    <configuration name="com.matt.homework11.GroceryTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.matt.homework11.GroceryTest" />
+      <module name="GrokkingConcurrency.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.matt.homework8.*" />
+          <option name="PATTERN" value="com.matt.homework11.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -194,7 +192,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="GroceryTest.test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GroceryTest.test (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -207,7 +205,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.matt.homework9.GroceryTest.test&quot;" />
+            <option value="&quot;com.matt.homework11.GroceryTest.test&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -218,19 +216,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.com.matt.homework11.GroceryTest" />
       <item itemvalue="Application.GroceryTest" />
-      <item itemvalue="Application.OrderingDeadlock" />
+      <item itemvalue="Gradle.GroceryTest.test (1)" />
       <item itemvalue="Gradle.GroceryTest" />
       <item itemvalue="Gradle.GroceryTest.addToSynchronizedGrocery" />
-      <item itemvalue="Gradle.GroceryTest.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.GroceryTest.test (1)" />
+        <item itemvalue="Application.com.matt.homework11.GroceryTest" />
         <item itemvalue="Application.GroceryTest" />
         <item itemvalue="Gradle.GroceryTest.addToSynchronizedGrocery" />
         <item itemvalue="Gradle.GroceryTest" />
-        <item itemvalue="Gradle.GroceryTest.test" />
-        <item itemvalue="Application.OrderingDeadlock" />
       </list>
     </recent_temporary>
   </component>
@@ -290,6 +288,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/matt/homework7/TimingThreadPool.java</url>
           <line>37</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/matt/homework11/FairLockGrocery.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/matt/homework11/FairLockGrocery.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-defaults>
